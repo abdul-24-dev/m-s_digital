@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Legend Tech</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #f9fafb; }
+        .glass { backdrop-filter: blur(16px); background: rgba(255, 255, 255, 0.8); }
+        .contact-card:hover { transform: translateY(-5px); transition: all 0.3s ease; }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col">
+
+    <header class="sticky top-0 z-40 border-b border-gray-100 glass shadow-sm">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="index.html" class="flex items-center gap-2">
+                <div class="bg-black text-white p-2 rounded-lg font-black text-xl">M&S</div>
+                <h1 class="text-xl font-extrabold tracking-tight">M&S DIGITALS</h1>
+            </a>
+            <a href="index.html" class="text-sm font-bold text-gray-500 hover:text-black transition-colors">
+                <i class="fa-solid fa-arrow-left mr-2"></i> Back to Shop
+            </a>
+        </div>
+    </header>
+
+    <main class="flex-grow max-w-5xl mx-auto px-6 py-12 md:py-20 w-full">
+        <div class="text-center mb-16">
+            <h2 class="text-4xl md:text-5xl font-black text-gray-900 mb-4 italic">Get in Touch</h2>
+            <p class="text-gray-500 max-w-lg mx-auto">Have a question about a gadget or an order? Our team of legends is ready to help you out.</p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            
+            <div class="space-y-4">
+                <div class="contact-card bg-white p-6 rounded-3xl border border-gray-100 shadow-sm flex items-start gap-4">
+                    <div class="w-12 h-12 bg-[#26C796]/10 rounded-2xl flex items-center justify-center text-[#26C796] shrink-0">
+                        <i class="fa-brands fa-whatsapp text-2xl"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-gray-900">WhatsApp</h4>
+                        <p class="text-sm text-gray-500 mb-2">Instant Support</p>
+                        <a href="https://wa.me/2348067920579" class="text-sm font-black text-[#26C796] hover:underline">+234 806 792 0579</a>
+                    </div>
+                </div>
+
+                <div class="contact-card bg-white p-6 rounded-3xl border border-gray-100 shadow-sm flex items-start gap-4">
+                    <div class="w-12 h-12 bg-blue-50 rounded-2xl flex items-center justify-center text-blue-600 shrink-0">
+                        <i class="fa-solid fa-envelope text-xl"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-gray-900">Email Us</h4>
+                        <p class="text-sm text-gray-500 mb-2">Official Inquiries</p>
+                        <a href="mailto:abdulwasiuisah34@gmail.com" class="text-sm font-black text-blue-600 hover:underline">lawalayomide670@gmail.com</a>
+                    </div>
+                </div>
+
+                <div class="contact-card bg-black p-6 rounded-3xl text-white shadow-lg flex items-start gap-4">
+                    <div class="w-12 h-12 bg-white/10 rounded-2xl flex items-center justify-center text-[#26C796] shrink-0">
+                        <i class="fa-solid fa-location-dot text-xl"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-bold">Our Hub</h4>
+                        <p class="text-sm text-gray-400">Abuja, Nigeria</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="lg:col-span-2 bg-white rounded-[2.5rem] border border-gray-100 p-8 md:p-10 shadow-sm">
+                <form action="https://api.web3forms.com/submit" method="POST" class="space-y-6">
+                    
+                    <input type="hidden" name="access_key" value="760cad46-da05-41d0-af05-c7d4e3ee0303">
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-xs font-bold uppercase tracking-widest text-gray-400 mb-2">Full Name</label>
+                            <input type="text" name="name" required placeholder="Full Name" class="w-full h-14 px-5 rounded-2xl bg-gray-50 border-none focus:ring-2 focus:ring-[#26C796] outline-none text-sm font-semibold transition-all">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold uppercase tracking-widest text-gray-400 mb-2">Email Address</label>
+                            <input type="email" name="email" required placeholder="fullname@gmail.com" class="w-full h-14 px-5 rounded-2xl bg-gray-50 border-none focus:ring-2 focus:ring-[#26C796] outline-none text-sm font-semibold transition-all">
+                        </div>
+                    </div>
+                    <div>
+                        <label class="block text-xs font-bold uppercase tracking-widest text-gray-400 mb-2">Subject</label>
+                        <select name="subject" class="w-full h-14 px-5 rounded-2xl bg-gray-50 border-none focus:ring-2 focus:ring-[#26C796] outline-none text-sm font-semibold transition-all" required>
+                            <option>Order Inquiry</option>
+                            <option>Product Availability</option>
+                            <option>Repair/Warranty</option>
+                            <option>Others</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block text-xs font-bold uppercase tracking-widest text-gray-400 mb-2">Message</label>
+                        <textarea name="message" required rows="5" placeholder="Tell us what you need..." class="w-full p-5 rounded-2xl bg-gray-50 border-none focus:ring-2 focus:ring-[#26C796] outline-none text-sm font-semibold transition-all"></textarea>
+                    </div>
+                    <button type="submit" class="w-full py-4 bg-black text-white rounded-2xl font-bold hover:bg-[#26C796] hover:shadow-lg transition-all">
+                        Send Message <i class="fa-solid fa-paper-plane ml-2"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-white border-t border-gray-100 py-8 text-center text-[10px] text-gray-400 font-bold uppercase tracking-widest">
+        © 2026 Legend Tech Hub • Premium Standards Only
+    </footer>
+
+</body>
+</html>
